@@ -1,0 +1,87 @@
+<svg width="100%" height="220" viewBox="0 0 800 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @keyframes slow-rotate {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      @keyframes twinkle {
+        0%, 100% { opacity: 0.15; }
+        50% { opacity: 0.85; }
+      }
+      @keyframes pulse-ring {
+        0%, 100% { stroke-opacity: 0.1; r: 52px; }
+        50% { stroke-opacity: 0.35; r: 58px; }
+      }
+      .star-1 { animation: twinkle 4s ease-in-out infinite; }
+      .star-2 { animation: twinkle 5.5s ease-in-out infinite 1.2s; }
+      .star-3 { animation: twinkle 3.2s ease-in-out infinite 0.7s; }
+      .star-4 { animation: twinkle 6s ease-in-out infinite 2s; }
+      .snowflake-core {
+        transform-origin: 400px 105px;
+        animation: slow-rotate 75s linear infinite;
+      }
+      .pulse-circle {
+        animation: pulse-ring 6s ease-in-out infinite;
+      }
+      .mono-title {
+        font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+        font-size: 13px;
+        letter-spacing: 0.35em;
+        text-transform: uppercase;
+        fill: #888888;
+      }
+      .mono-sub {
+        font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+        font-size: 11px;
+        letter-spacing: 0.18em;
+        fill: #444444;
+      }
+    </style>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="800" height="220" rx="10" fill="#09090b" stroke="#1f1f23" stroke-width="1"/>
+
+  <!-- Subtle Constellation Stars -->
+  <circle cx="120" cy="50" r="1" fill="#ffffff" class="star-1"/>
+  <circle cx="180" cy="140" r="1.2" fill="#ffffff" class="star-2"/>
+  <circle cx="260" cy="80" r="1" fill="#ffffff" class="star-3"/>
+  <circle cx="620" cy="65" r="1.5" fill="#ffffff" class="star-4"/>
+  <circle cx="690" cy="150" r="1" fill="#ffffff" class="star-2"/>
+  <circle cx="730" cy="45" r="1.2" fill="#ffffff" class="star-3"/>
+  <circle cx="90" cy="165" r="1" fill="#ffffff" class="star-4"/>
+  <circle cx="560" cy="140" r="1" fill="#ffffff" class="star-1"/>
+
+  <!-- Delicate Pulsing Ring -->
+  <circle cx="400" cy="105" r="54" stroke="#ffffff" stroke-width="0.75" stroke-dasharray="2 4" fill="none" class="pulse-circle"/>
+
+  <!-- Rotating Geometric Snowflake -->
+  <g class="snowflake-core">
+    <!-- 6 Primary Axes -->
+    <line x1="400" y1="62" x2="400" y2="148" stroke="#d4d4d8" stroke-width="1.2"/>
+    <line x1="362.76" y1="83.5" x2="437.24" y2="126.5" stroke="#d4d4d8" stroke-width="1.2"/>
+    <line x1="362.76" y1="126.5" x2="437.24" y2="83.5" stroke="#d4d4d8" stroke-width="1.2"/>
+
+    <!-- Axis Fractals / Crystals (0 deg) -->
+    <path d="M394 76 L400 70 L406 76" stroke="#a1a1aa" stroke-width="1" fill="none"/>
+    <path d="M396 86 L400 82 L404 86" stroke="#71717a" stroke-width="0.8" fill="none"/>
+    <path d="M394 134 L400 140 L406 134" stroke="#a1a1aa" stroke-width="1" fill="none"/>
+    <path d="M396 124 L400 128 L404 124" stroke="#71717a" stroke-width="0.8" fill="none"/>
+
+    <!-- Axis Fractals (60 deg) -->
+    <path d="M428 90 L432 86 L436 92" stroke="#a1a1aa" stroke-width="1" fill="none"/>
+    <path d="M364 118 L368 124 L372 120" stroke="#a1a1aa" stroke-width="1" fill="none"/>
+
+    <!-- Axis Fractals (120 deg) -->
+    <path d="M436 118 L432 124 L428 120" stroke="#a1a1aa" stroke-width="1" fill="none"/>
+    <path d="M372 90 L368 86 L364 92" stroke="#a1a1aa" stroke-width="1" fill="none"/>
+
+    <!-- Central Diamond Core -->
+    <polygon points="400,99 405,105 400,111 395,105" stroke="#ffffff" stroke-width="1" fill="#09090b"/>
+  </g>
+
+  <!-- Typography -->
+  <text x="400" y="185" text-anchor="middle" class="mono-title">winters</text>
+  <text x="400" y="202" text-anchor="middle" class="mono-sub">0 x 6 c 0</text>
+</svg>
