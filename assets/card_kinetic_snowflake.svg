@@ -1,164 +1,280 @@
-<svg width="100%" height="520" viewBox="0 0 800 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="100%" height="320" viewBox="0 0 800 320" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <style>
-      @keyframes slow-spin {
+      @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&amp;display=swap');
+
+      @keyframes slow-rotate {
         0% { transform: rotate(0deg); }
         100% { transform: rotate(360deg); }
       }
-      @keyframes twinkle {
-        0%, 100% { opacity: 0.1; }
-        50% { opacity: 0.85; }
+
+      .flake-spin {
+        transform-origin: 0px 0px;
+        animation: slow-rotate 40s linear infinite;
       }
-      @keyframes pulse-crystal {
-        0%, 100% { transform: scale(0.98); opacity: 0.75; }
-        50% { transform: scale(1.02); opacity: 1; }
-      }
-      .flake-wrap {
-        transform-origin: 400px 200px;
-        animation: slow-spin 80s linear infinite;
-      }
-      .crystal-pulse {
-        transform-origin: 400px 200px;
-        animation: pulse-crystal 6s ease-in-out infinite;
-      }
-      .s1 { animation: twinkle 3.5s ease-in-out infinite; }
-      .s2 { animation: twinkle 5s ease-in-out infinite 1s; }
-      .s3 { animation: twinkle 4.2s ease-in-out infinite 2s; }
-      .s4 { animation: twinkle 6s ease-in-out infinite 0.5s; }
-      .title {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", monospace;
-        font-weight: 300;
-        font-size: 24px;
-        letter-spacing: 0.45em;
+
+      .hero-title {
+        font-family: 'Orbitron', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        font-weight: 700;
+        font-size: 38px;
+        letter-spacing: 0.38em;
         text-transform: uppercase;
         fill: #fafafa;
       }
-      .sub {
-        font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
-        font-size: 11px;
-        letter-spacing: 0.25em;
+
+      .hero-quote {
+        font-family: ui-monospace, SFMono-Regular, "Liberation Mono", Menlo, Consolas, monospace;
+        font-size: 13.5px;
+        letter-spacing: 0.12em;
         fill: #71717a;
-      }
-      .quote {
-        font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
-        font-size: 13px;
-        letter-spacing: 0.08em;
-        fill: #a1a1aa;
         font-style: italic;
       }
-      .box-hdr {
-        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+
+      .hero-sub {
+        font-family: 'Orbitron', ui-monospace, monospace;
         font-size: 11px;
-        letter-spacing: 0.15em;
-        fill: #52525b;
-      }
-      .box-txt {
-        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-        font-size: 12px;
-        letter-spacing: 0.05em;
-        fill: #d4d4d8;
-      }
-      .box-dim {
-        fill: #71717a;
+        letter-spacing: 0.4em;
+        fill: #3f3f46;
       }
     </style>
   </defs>
 
-  <!-- Deep Obsidian Canvas -->
-  <rect width="800" height="520" rx="12" fill="#09090b" stroke="#1f1f23" stroke-width="1"/>
+  <!-- Deep Obsidian Void -->
+  <rect width="800" height="320" rx="12" fill="#09090b" stroke="#18181b" stroke-width="1"/>
 
-  <!-- Subtle Constellation Background Field -->
-  <circle cx="100" cy="80" r="1" fill="#ffffff" class="s1"/>
-  <circle cx="180" cy="190" r="1.2" fill="#ffffff" class="s2"/>
-  <circle cx="140" cy="360" r="0.8" fill="#ffffff" class="s3"/>
-  <circle cx="280" cy="90" r="1" fill="#ffffff" class="s4"/>
-  <circle cx="530" cy="70" r="1.2" fill="#ffffff" class="s1"/>
-  <circle cx="680" cy="120" r="0.8" fill="#ffffff" class="s3"/>
-  <circle cx="640" cy="380" r="1" fill="#ffffff" class="s2"/>
-  <circle cx="720" cy="240" r="1.2" fill="#ffffff" class="s4"/>
-  <circle cx="220" cy="450" r="0.8" fill="#ffffff" class="s1"/>
-  <circle cx="580" cy="460" r="1" fill="#ffffff" class="s3"/>
+  <!-- Falling Sparse Snow Particles -->
+  <g class="falling-snow-layer">
 
-  <!-- Rotating Geometric Dendrite Snowflake -->
-  <g class="flake-wrap">
-    <g class="crystal-pulse">
-<line x1="400.0" y1="200.0" x2="510.0" y2="200.0" stroke="#e4e4e7" stroke-width="1.5" stroke-linecap="round"/>
-<line x1="435.0" y1="200.0" x2="446.0" y2="180.9" stroke="#a1a1aa" stroke-width="1.2" stroke-linecap="round"/>
-<line x1="435.0" y1="200.0" x2="446.0" y2="219.1" stroke="#a1a1aa" stroke-width="1.2" stroke-linecap="round"/>
-<line x1="465.0" y1="200.0" x2="481.0" y2="172.3" stroke="#d4d4d8" stroke-width="1.2" stroke-linecap="round"/>
-<line x1="473.8" y1="184.8" x2="483.8" y2="184.8" stroke="#71717a" stroke-width="0.8" stroke-linecap="round"/>
-<line x1="465.0" y1="200.0" x2="481.0" y2="227.7" stroke="#d4d4d8" stroke-width="1.2" stroke-linecap="round"/>
-<line x1="473.8" y1="215.2" x2="483.8" y2="215.2" stroke="#71717a" stroke-width="0.8" stroke-linecap="round"/>
-<line x1="490.0" y1="200.0" x2="500.0" y2="182.7" stroke="#a1a1aa" stroke-width="1.0" stroke-linecap="round"/>
-<line x1="490.0" y1="200.0" x2="500.0" y2="217.3" stroke="#a1a1aa" stroke-width="1.0" stroke-linecap="round"/>
-<circle cx="518.0" cy="200.0" r="1.5" fill="#ffffff"/>
-<line x1="400.0" y1="200.0" x2="455.0" y2="295.3" stroke="#e4e4e7" stroke-width="1.5" stroke-linecap="round"/>
-<line x1="417.5" y1="230.3" x2="439.5" y2="230.3" stroke="#a1a1aa" stroke-width="1.2" stroke-linecap="round"/>
-<line x1="417.5" y1="230.3" x2="406.5" y2="249.4" stroke="#a1a1aa" stroke-width="1.2" stroke-linecap="round"/>
-<line x1="432.5" y1="256.3" x2="464.5" y2="256.3" stroke="#d4d4d8" stroke-width="1.2" stroke-linecap="round"/>
-<line x1="450.1" y1="256.3" x2="455.1" y2="265.0" stroke="#71717a" stroke-width="0.8" stroke-linecap="round"/>
-<line x1="432.5" y1="256.3" x2="416.5" y2="284.0" stroke="#d4d4d8" stroke-width="1.2" stroke-linecap="round"/>
-<line x1="423.7" y1="271.5" x2="428.7" y2="280.2" stroke="#71717a" stroke-width="0.8" stroke-linecap="round"/>
-<line x1="445.0" y1="277.9" x2="465.0" y2="277.9" stroke="#a1a1aa" stroke-width="1.0" stroke-linecap="round"/>
-<line x1="445.0" y1="277.9" x2="435.0" y2="295.3" stroke="#a1a1aa" stroke-width="1.0" stroke-linecap="round"/>
-<circle cx="459.0" cy="302.2" r="1.5" fill="#ffffff"/>
-<line x1="400.0" y1="200.0" x2="345.0" y2="295.3" stroke="#e4e4e7" stroke-width="1.5" stroke-linecap="round"/>
-<line x1="382.5" y1="230.3" x2="393.5" y2="249.4" stroke="#a1a1aa" stroke-width="1.2" stroke-linecap="round"/>
-<line x1="382.5" y1="230.3" x2="360.5" y2="230.3" stroke="#a1a1aa" stroke-width="1.2" stroke-linecap="round"/>
-<line x1="367.5" y1="256.3" x2="383.5" y2="284.0" stroke="#d4d4d8" stroke-width="1.2" stroke-linecap="round"/>
-<line x1="376.3" y1="271.5" x2="371.3" y2="280.2" stroke="#71717a" stroke-width="0.8" stroke-linecap="round"/>
-<line x1="367.5" y1="256.3" x2="335.5" y2="256.3" stroke="#d4d4d8" stroke-width="1.2" stroke-linecap="round"/>
-<line x1="349.9" y1="256.3" x2="344.9" y2="265.0" stroke="#71717a" stroke-width="0.8" stroke-linecap="round"/>
-<line x1="355.0" y1="277.9" x2="365.0" y2="295.3" stroke="#a1a1aa" stroke-width="1.0" stroke-linecap="round"/>
-<line x1="355.0" y1="277.9" x2="335.0" y2="277.9" stroke="#a1a1aa" stroke-width="1.0" stroke-linecap="round"/>
-<circle cx="341.0" cy="302.2" r="1.5" fill="#ffffff"/>
-<line x1="400.0" y1="200.0" x2="290.0" y2="200.0" stroke="#e4e4e7" stroke-width="1.5" stroke-linecap="round"/>
-<line x1="365.0" y1="200.0" x2="354.0" y2="219.1" stroke="#a1a1aa" stroke-width="1.2" stroke-linecap="round"/>
-<line x1="365.0" y1="200.0" x2="354.0" y2="180.9" stroke="#a1a1aa" stroke-width="1.2" stroke-linecap="round"/>
-<line x1="335.0" y1="200.0" x2="319.0" y2="227.7" stroke="#d4d4d8" stroke-width="1.2" stroke-linecap="round"/>
-<line x1="326.2" y1="215.2" x2="316.2" y2="215.2" stroke="#71717a" stroke-width="0.8" stroke-linecap="round"/>
-<line x1="335.0" y1="200.0" x2="319.0" y2="172.3" stroke="#d4d4d8" stroke-width="1.2" stroke-linecap="round"/>
-<line x1="326.2" y1="184.8" x2="316.2" y2="184.8" stroke="#71717a" stroke-width="0.8" stroke-linecap="round"/>
-<line x1="310.0" y1="200.0" x2="300.0" y2="217.3" stroke="#a1a1aa" stroke-width="1.0" stroke-linecap="round"/>
-<line x1="310.0" y1="200.0" x2="300.0" y2="182.7" stroke="#a1a1aa" stroke-width="1.0" stroke-linecap="round"/>
-<circle cx="282.0" cy="200.0" r="1.5" fill="#ffffff"/>
-<line x1="400.0" y1="200.0" x2="345.0" y2="104.7" stroke="#e4e4e7" stroke-width="1.5" stroke-linecap="round"/>
-<line x1="382.5" y1="169.7" x2="360.5" y2="169.7" stroke="#a1a1aa" stroke-width="1.2" stroke-linecap="round"/>
-<line x1="382.5" y1="169.7" x2="393.5" y2="150.6" stroke="#a1a1aa" stroke-width="1.2" stroke-linecap="round"/>
-<line x1="367.5" y1="143.7" x2="335.5" y2="143.7" stroke="#d4d4d8" stroke-width="1.2" stroke-linecap="round"/>
-<line x1="349.9" y1="143.7" x2="344.9" y2="135.0" stroke="#71717a" stroke-width="0.8" stroke-linecap="round"/>
-<line x1="367.5" y1="143.7" x2="383.5" y2="116.0" stroke="#d4d4d8" stroke-width="1.2" stroke-linecap="round"/>
-<line x1="376.3" y1="128.5" x2="371.3" y2="119.8" stroke="#71717a" stroke-width="0.8" stroke-linecap="round"/>
-<line x1="355.0" y1="122.1" x2="335.0" y2="122.1" stroke="#a1a1aa" stroke-width="1.0" stroke-linecap="round"/>
-<line x1="355.0" y1="122.1" x2="365.0" y2="104.7" stroke="#a1a1aa" stroke-width="1.0" stroke-linecap="round"/>
-<circle cx="341.0" cy="97.8" r="1.5" fill="#ffffff"/>
-<line x1="400.0" y1="200.0" x2="455.0" y2="104.7" stroke="#e4e4e7" stroke-width="1.5" stroke-linecap="round"/>
-<line x1="417.5" y1="169.7" x2="406.5" y2="150.6" stroke="#a1a1aa" stroke-width="1.2" stroke-linecap="round"/>
-<line x1="417.5" y1="169.7" x2="439.5" y2="169.7" stroke="#a1a1aa" stroke-width="1.2" stroke-linecap="round"/>
-<line x1="432.5" y1="143.7" x2="416.5" y2="116.0" stroke="#d4d4d8" stroke-width="1.2" stroke-linecap="round"/>
-<line x1="423.7" y1="128.5" x2="428.7" y2="119.8" stroke="#71717a" stroke-width="0.8" stroke-linecap="round"/>
-<line x1="432.5" y1="143.7" x2="464.5" y2="143.7" stroke="#d4d4d8" stroke-width="1.2" stroke-linecap="round"/>
-<line x1="450.1" y1="143.7" x2="455.1" y2="135.0" stroke="#71717a" stroke-width="0.8" stroke-linecap="round"/>
-<line x1="445.0" y1="122.1" x2="435.0" y2="104.7" stroke="#a1a1aa" stroke-width="1.0" stroke-linecap="round"/>
-<line x1="445.0" y1="122.1" x2="465.0" y2="122.1" stroke="#a1a1aa" stroke-width="1.0" stroke-linecap="round"/>
-<circle cx="459.0" cy="97.8" r="1.5" fill="#ffffff"/>
-<polygon points="418.0,200.0 409.0,215.6 391.0,215.6 382.0,200.0 391.0,184.4 409.0,184.4" stroke="#ffffff" stroke-width="1.2" fill="#09090b"/>
-<polygon points="406.9,204.0 400.0,208.0 393.1,204.0 393.1,196.0 400.0,192.0 406.9,196.0" stroke="#71717a" stroke-width="0.8" fill="#18181b"/>
+    <circle r="1.1" fill="#ffffff" opacity="0">
+      <animate attributeName="cy" values="-10; 350" dur="9.2s" begin="3.3s" repeatCount="indefinite" />
+      <animate attributeName="cx" values="684; 658" dur="9.2s" begin="3.3s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 0.72; 0.72; 0" keyTimes="0; 0.15; 0.85; 1" dur="9.2s" begin="3.3s" repeatCount="indefinite" />
+    </circle>
+
+    <circle r="0.8" fill="#ffffff" opacity="0">
+      <animate attributeName="cy" values="-10; 350" dur="9.8s" begin="5.1s" repeatCount="indefinite" />
+      <animate attributeName="cx" values="722; 751" dur="9.8s" begin="5.1s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 0.46; 0.46; 0" keyTimes="0; 0.15; 0.85; 1" dur="9.8s" begin="5.1s" repeatCount="indefinite" />
+    </circle>
+
+    <circle r="1.6" fill="#ffffff" opacity="0">
+      <animate attributeName="cy" values="-10; 350" dur="9.2s" begin="2.4s" repeatCount="indefinite" />
+      <animate attributeName="cx" values="547; 584" dur="9.2s" begin="2.4s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 0.62; 0.62; 0" keyTimes="0; 0.15; 0.85; 1" dur="9.2s" begin="2.4s" repeatCount="indefinite" />
+    </circle>
+
+    <circle r="0.8" fill="#ffffff" opacity="0">
+      <animate attributeName="cy" values="-10; 350" dur="14.3s" begin="9.7s" repeatCount="indefinite" />
+      <animate attributeName="cx" values="255; 272" dur="14.3s" begin="9.7s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 0.75; 0.75; 0" keyTimes="0; 0.15; 0.85; 1" dur="14.3s" begin="9.7s" repeatCount="indefinite" />
+    </circle>
+
+    <circle r="1.9" fill="#ffffff" opacity="0">
+      <animate attributeName="cy" values="-10; 350" dur="12.1s" begin="1.9s" repeatCount="indefinite" />
+      <animate attributeName="cx" values="744; 758" dur="12.1s" begin="1.9s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 0.52; 0.52; 0" keyTimes="0; 0.15; 0.85; 1" dur="12.1s" begin="1.9s" repeatCount="indefinite" />
+    </circle>
+
+    <circle r="1.5" fill="#ffffff" opacity="0">
+      <animate attributeName="cy" values="-10; 350" dur="9.9s" begin="10.2s" repeatCount="indefinite" />
+      <animate attributeName="cx" values="124; 132" dur="9.9s" begin="10.2s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 0.75; 0.75; 0" keyTimes="0; 0.15; 0.85; 1" dur="9.9s" begin="10.2s" repeatCount="indefinite" />
+    </circle>
+
+    <circle r="0.9" fill="#ffffff" opacity="0">
+      <animate attributeName="cy" values="-10; 350" dur="10.1s" begin="11.1s" repeatCount="indefinite" />
+      <animate attributeName="cx" values="500; 528" dur="10.1s" begin="11.1s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 0.5; 0.5; 0" keyTimes="0; 0.15; 0.85; 1" dur="10.1s" begin="11.1s" repeatCount="indefinite" />
+    </circle>
+
+    <circle r="1.0" fill="#ffffff" opacity="0">
+      <animate attributeName="cy" values="-10; 350" dur="17.0s" begin="4.3s" repeatCount="indefinite" />
+      <animate attributeName="cx" values="673; 712" dur="17.0s" begin="4.3s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 0.38; 0.38; 0" keyTimes="0; 0.15; 0.85; 1" dur="17.0s" begin="4.3s" repeatCount="indefinite" />
+    </circle>
+
+    <circle r="1.8" fill="#ffffff" opacity="0">
+      <animate attributeName="cy" values="-10; 350" dur="16.0s" begin="11.8s" repeatCount="indefinite" />
+      <animate attributeName="cx" values="707; 696" dur="16.0s" begin="11.8s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 0.78; 0.78; 0" keyTimes="0; 0.15; 0.85; 1" dur="16.0s" begin="11.8s" repeatCount="indefinite" />
+    </circle>
+
+    <circle r="1.0" fill="#ffffff" opacity="0">
+      <animate attributeName="cy" values="-10; 350" dur="13.1s" begin="10.0s" repeatCount="indefinite" />
+      <animate attributeName="cx" values="419; 414" dur="13.1s" begin="10.0s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 0.53; 0.53; 0" keyTimes="0; 0.15; 0.85; 1" dur="13.1s" begin="10.0s" repeatCount="indefinite" />
+    </circle>
+
+    <circle r="0.9" fill="#ffffff" opacity="0">
+      <animate attributeName="cy" values="-10; 350" dur="15.3s" begin="8.2s" repeatCount="indefinite" />
+      <animate attributeName="cx" values="716; 710" dur="15.3s" begin="8.2s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 0.67; 0.67; 0" keyTimes="0; 0.15; 0.85; 1" dur="15.3s" begin="8.2s" repeatCount="indefinite" />
+    </circle>
+
+    <circle r="2.0" fill="#ffffff" opacity="0">
+      <animate attributeName="cy" values="-10; 350" dur="10.5s" begin="4.6s" repeatCount="indefinite" />
+      <animate attributeName="cx" values="576; 567" dur="10.5s" begin="4.6s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 0.67; 0.67; 0" keyTimes="0; 0.15; 0.85; 1" dur="10.5s" begin="4.6s" repeatCount="indefinite" />
+    </circle>
+
+    <circle r="1.7" fill="#ffffff" opacity="0">
+      <animate attributeName="cy" values="-10; 350" dur="15.2s" begin="10.1s" repeatCount="indefinite" />
+      <animate attributeName="cx" values="600; 588" dur="15.2s" begin="10.1s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 0.46; 0.46; 0" keyTimes="0; 0.15; 0.85; 1" dur="15.2s" begin="10.1s" repeatCount="indefinite" />
+    </circle>
+
+    <circle r="1.9" fill="#ffffff" opacity="0">
+      <animate attributeName="cy" values="-10; 350" dur="12.6s" begin="0.8s" repeatCount="indefinite" />
+      <animate attributeName="cx" values="62; 62" dur="12.6s" begin="0.8s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 0.63; 0.63; 0" keyTimes="0; 0.15; 0.85; 1" dur="12.6s" begin="0.8s" repeatCount="indefinite" />
+    </circle>
+
+    <circle r="1.9" fill="#ffffff" opacity="0">
+      <animate attributeName="cy" values="-10; 350" dur="10.9s" begin="6.0s" repeatCount="indefinite" />
+      <animate attributeName="cx" values="765; 765" dur="10.9s" begin="6.0s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 0.67; 0.67; 0" keyTimes="0; 0.15; 0.85; 1" dur="10.9s" begin="6.0s" repeatCount="indefinite" />
+    </circle>
+
+    <circle r="1.4" fill="#ffffff" opacity="0">
+      <animate attributeName="cy" values="-10; 350" dur="10.3s" begin="8.9s" repeatCount="indefinite" />
+      <animate attributeName="cx" values="176; 169" dur="10.3s" begin="8.9s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 0.72; 0.72; 0" keyTimes="0; 0.15; 0.85; 1" dur="10.3s" begin="8.9s" repeatCount="indefinite" />
+    </circle>
+
+    <circle r="2.0" fill="#ffffff" opacity="0">
+      <animate attributeName="cy" values="-10; 350" dur="12.6s" begin="2.6s" repeatCount="indefinite" />
+      <animate attributeName="cx" values="468; 502" dur="12.6s" begin="2.6s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 0.6; 0.6; 0" keyTimes="0; 0.15; 0.85; 1" dur="12.6s" begin="2.6s" repeatCount="indefinite" />
+    </circle>
+
+    <circle r="1.0" fill="#ffffff" opacity="0">
+      <animate attributeName="cy" values="-10; 350" dur="16.7s" begin="1.8s" repeatCount="indefinite" />
+      <animate attributeName="cx" values="123; 89" dur="16.7s" begin="1.8s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 0.69; 0.69; 0" keyTimes="0; 0.15; 0.85; 1" dur="16.7s" begin="1.8s" repeatCount="indefinite" />
+    </circle>
+
+    <circle r="1.4" fill="#ffffff" opacity="0">
+      <animate attributeName="cy" values="-10; 350" dur="12.5s" begin="7.2s" repeatCount="indefinite" />
+      <animate attributeName="cx" values="640; 608" dur="12.5s" begin="7.2s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 0.48; 0.48; 0" keyTimes="0; 0.15; 0.85; 1" dur="12.5s" begin="7.2s" repeatCount="indefinite" />
+    </circle>
+
+    <circle r="1.9" fill="#ffffff" opacity="0">
+      <animate attributeName="cy" values="-10; 350" dur="15.1s" begin="1.4s" repeatCount="indefinite" />
+      <animate attributeName="cx" values="596; 557" dur="15.1s" begin="1.4s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 0.73; 0.73; 0" keyTimes="0; 0.15; 0.85; 1" dur="15.1s" begin="1.4s" repeatCount="indefinite" />
+    </circle>
+
+    <circle r="1.3" fill="#ffffff" opacity="0">
+      <animate attributeName="cy" values="-10; 350" dur="10.0s" begin="5.2s" repeatCount="indefinite" />
+      <animate attributeName="cx" values="686; 689" dur="10.0s" begin="5.2s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 0.83; 0.83; 0" keyTimes="0; 0.15; 0.85; 1" dur="10.0s" begin="5.2s" repeatCount="indefinite" />
+    </circle>
+
+    <circle r="1.4" fill="#ffffff" opacity="0">
+      <animate attributeName="cy" values="-10; 350" dur="17.7s" begin="9.1s" repeatCount="indefinite" />
+      <animate attributeName="cx" values="766; 759" dur="17.7s" begin="9.1s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 0.4; 0.4; 0" keyTimes="0; 0.15; 0.85; 1" dur="17.7s" begin="9.1s" repeatCount="indefinite" />
+    </circle>
+
+    <circle r="1.0" fill="#ffffff" opacity="0">
+      <animate attributeName="cy" values="-10; 350" dur="16.6s" begin="6.1s" repeatCount="indefinite" />
+      <animate attributeName="cx" values="670; 668" dur="16.6s" begin="6.1s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 0.54; 0.54; 0" keyTimes="0; 0.15; 0.85; 1" dur="16.6s" begin="6.1s" repeatCount="indefinite" />
+    </circle>
+
+    <circle r="1.9" fill="#ffffff" opacity="0">
+      <animate attributeName="cy" values="-10; 350" dur="17.6s" begin="11.1s" repeatCount="indefinite" />
+      <animate attributeName="cx" values="195; 224" dur="17.6s" begin="11.1s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 0.65; 0.65; 0" keyTimes="0; 0.15; 0.85; 1" dur="17.6s" begin="11.1s" repeatCount="indefinite" />
+    </circle>
+  </g>
+
+  <!-- Ambient Horizontal Glow Line -->
+  <line x1="220" y1="210" x2="580" y2="210" stroke="#1c1c20" stroke-width="1"/>
+
+  <!-- Center Composition -->
+  <!-- Name is centered around 400. Let's position snowflake to the left of "W I N T E R S" -->
+  <!-- "W I N T E R S" with Orbitron 38px and 0.38em letter-spacing is ~310px wide -->
+  <!-- Half width is ~155px. Left edge is at ~245px. Snowflake center at x=195px, y=120px -->
+  <g transform="translate(190, 118)">
+    <g class="flake-spin">
+<line x1="0.0" y1="0.0" x2="22.0" y2="0.0" stroke="#e4e4e7" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="8.0" y1="0.0" x2="10.5" y2="-4.3" stroke="#a1a1aa" stroke-width="0.9" stroke-linecap="round"/>
+<line x1="8.0" y1="0.0" x2="10.5" y2="4.3" stroke="#a1a1aa" stroke-width="0.9" stroke-linecap="round"/>
+<line x1="14.0" y1="0.0" x2="18.0" y2="-6.9" stroke="#d4d4d8" stroke-width="1.0" stroke-linecap="round"/>
+<line x1="16.2" y1="-3.8" x2="18.7" y2="-3.8" stroke="#71717a" stroke-width="0.6" stroke-linecap="round"/>
+<line x1="14.0" y1="0.0" x2="18.0" y2="6.9" stroke="#d4d4d8" stroke-width="1.0" stroke-linecap="round"/>
+<line x1="16.2" y1="3.8" x2="18.7" y2="3.8" stroke="#71717a" stroke-width="0.6" stroke-linecap="round"/>
+<line x1="19.0" y1="0.0" x2="21.0" y2="-3.5" stroke="#a1a1aa" stroke-width="0.8" stroke-linecap="round"/>
+<line x1="19.0" y1="0.0" x2="21.0" y2="3.5" stroke="#a1a1aa" stroke-width="0.8" stroke-linecap="round"/>
+<circle cx="24.0" cy="0.0" r="0.8" fill="#ffffff"/>
+<line x1="0.0" y1="0.0" x2="11.0" y2="19.1" stroke="#e4e4e7" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="4.0" y1="6.9" x2="9.0" y2="6.9" stroke="#a1a1aa" stroke-width="0.9" stroke-linecap="round"/>
+<line x1="4.0" y1="6.9" x2="1.5" y2="11.3" stroke="#a1a1aa" stroke-width="0.9" stroke-linecap="round"/>
+<line x1="7.0" y1="12.1" x2="15.0" y2="12.1" stroke="#d4d4d8" stroke-width="1.0" stroke-linecap="round"/>
+<line x1="11.4" y1="12.1" x2="12.7" y2="14.3" stroke="#71717a" stroke-width="0.6" stroke-linecap="round"/>
+<line x1="7.0" y1="12.1" x2="3.0" y2="19.1" stroke="#d4d4d8" stroke-width="1.0" stroke-linecap="round"/>
+<line x1="4.8" y1="15.9" x2="6.1" y2="18.1" stroke="#71717a" stroke-width="0.6" stroke-linecap="round"/>
+<line x1="9.5" y1="16.5" x2="13.5" y2="16.5" stroke="#a1a1aa" stroke-width="0.8" stroke-linecap="round"/>
+<line x1="9.5" y1="16.5" x2="7.5" y2="19.9" stroke="#a1a1aa" stroke-width="0.8" stroke-linecap="round"/>
+<circle cx="12.0" cy="20.8" r="0.8" fill="#ffffff"/>
+<line x1="0.0" y1="0.0" x2="-11.0" y2="19.1" stroke="#e4e4e7" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="-4.0" y1="6.9" x2="-1.5" y2="11.3" stroke="#a1a1aa" stroke-width="0.9" stroke-linecap="round"/>
+<line x1="-4.0" y1="6.9" x2="-9.0" y2="6.9" stroke="#a1a1aa" stroke-width="0.9" stroke-linecap="round"/>
+<line x1="-7.0" y1="12.1" x2="-3.0" y2="19.1" stroke="#d4d4d8" stroke-width="1.0" stroke-linecap="round"/>
+<line x1="-4.8" y1="15.9" x2="-6.0" y2="18.1" stroke="#71717a" stroke-width="0.6" stroke-linecap="round"/>
+<line x1="-7.0" y1="12.1" x2="-15.0" y2="12.1" stroke="#d4d4d8" stroke-width="1.0" stroke-linecap="round"/>
+<line x1="-11.4" y1="12.1" x2="-12.6" y2="14.3" stroke="#71717a" stroke-width="0.6" stroke-linecap="round"/>
+<line x1="-9.5" y1="16.5" x2="-7.5" y2="19.9" stroke="#a1a1aa" stroke-width="0.8" stroke-linecap="round"/>
+<line x1="-9.5" y1="16.5" x2="-13.5" y2="16.5" stroke="#a1a1aa" stroke-width="0.8" stroke-linecap="round"/>
+<circle cx="-12.0" cy="20.8" r="0.8" fill="#ffffff"/>
+<line x1="0.0" y1="0.0" x2="-22.0" y2="0.0" stroke="#e4e4e7" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="-8.0" y1="0.0" x2="-10.5" y2="4.3" stroke="#a1a1aa" stroke-width="0.9" stroke-linecap="round"/>
+<line x1="-8.0" y1="0.0" x2="-10.5" y2="-4.3" stroke="#a1a1aa" stroke-width="0.9" stroke-linecap="round"/>
+<line x1="-14.0" y1="0.0" x2="-18.0" y2="6.9" stroke="#d4d4d8" stroke-width="1.0" stroke-linecap="round"/>
+<line x1="-16.2" y1="3.8" x2="-18.7" y2="3.8" stroke="#71717a" stroke-width="0.6" stroke-linecap="round"/>
+<line x1="-14.0" y1="0.0" x2="-18.0" y2="-6.9" stroke="#d4d4d8" stroke-width="1.0" stroke-linecap="round"/>
+<line x1="-16.2" y1="-3.8" x2="-18.7" y2="-3.8" stroke="#71717a" stroke-width="0.6" stroke-linecap="round"/>
+<line x1="-19.0" y1="0.0" x2="-21.0" y2="3.5" stroke="#a1a1aa" stroke-width="0.8" stroke-linecap="round"/>
+<line x1="-19.0" y1="0.0" x2="-21.0" y2="-3.5" stroke="#a1a1aa" stroke-width="0.8" stroke-linecap="round"/>
+<circle cx="-24.0" cy="0.0" r="0.8" fill="#ffffff"/>
+<line x1="0.0" y1="0.0" x2="-11.0" y2="-19.1" stroke="#e4e4e7" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="-4.0" y1="-6.9" x2="-9.0" y2="-6.9" stroke="#a1a1aa" stroke-width="0.9" stroke-linecap="round"/>
+<line x1="-4.0" y1="-6.9" x2="-1.5" y2="-11.3" stroke="#a1a1aa" stroke-width="0.9" stroke-linecap="round"/>
+<line x1="-7.0" y1="-12.1" x2="-15.0" y2="-12.1" stroke="#d4d4d8" stroke-width="1.0" stroke-linecap="round"/>
+<line x1="-11.4" y1="-12.1" x2="-12.7" y2="-14.3" stroke="#71717a" stroke-width="0.6" stroke-linecap="round"/>
+<line x1="-7.0" y1="-12.1" x2="-3.0" y2="-19.1" stroke="#d4d4d8" stroke-width="1.0" stroke-linecap="round"/>
+<line x1="-4.8" y1="-15.9" x2="-6.1" y2="-18.1" stroke="#71717a" stroke-width="0.6" stroke-linecap="round"/>
+<line x1="-9.5" y1="-16.5" x2="-13.5" y2="-16.5" stroke="#a1a1aa" stroke-width="0.8" stroke-linecap="round"/>
+<line x1="-9.5" y1="-16.5" x2="-7.5" y2="-19.9" stroke="#a1a1aa" stroke-width="0.8" stroke-linecap="round"/>
+<circle cx="-12.0" cy="-20.8" r="0.8" fill="#ffffff"/>
+<line x1="0.0" y1="0.0" x2="11.0" y2="-19.1" stroke="#e4e4e7" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="4.0" y1="-6.9" x2="1.5" y2="-11.3" stroke="#a1a1aa" stroke-width="0.9" stroke-linecap="round"/>
+<line x1="4.0" y1="-6.9" x2="9.0" y2="-6.9" stroke="#a1a1aa" stroke-width="0.9" stroke-linecap="round"/>
+<line x1="7.0" y1="-12.1" x2="3.0" y2="-19.1" stroke="#d4d4d8" stroke-width="1.0" stroke-linecap="round"/>
+<line x1="4.8" y1="-15.9" x2="6.0" y2="-18.1" stroke="#71717a" stroke-width="0.6" stroke-linecap="round"/>
+<line x1="7.0" y1="-12.1" x2="15.0" y2="-12.1" stroke="#d4d4d8" stroke-width="1.0" stroke-linecap="round"/>
+<line x1="11.4" y1="-12.1" x2="12.7" y2="-14.3" stroke="#71717a" stroke-width="0.6" stroke-linecap="round"/>
+<line x1="9.5" y1="-16.5" x2="7.5" y2="-19.9" stroke="#a1a1aa" stroke-width="0.8" stroke-linecap="round"/>
+<line x1="9.5" y1="-16.5" x2="13.5" y2="-16.5" stroke="#a1a1aa" stroke-width="0.8" stroke-linecap="round"/>
+<circle cx="12.0" cy="-20.8" r="0.8" fill="#ffffff"/>
+<polygon points="4.5,0.0 2.3,3.9 -2.2,3.9 -4.5,0.0 -2.3,-3.9 2.3,-3.9" stroke="#ffffff" stroke-width="0.9" fill="#09090b"/>
+<polygon points="1.7,1.0 0.0,2.0 -1.7,1.0 -1.7,-1.0 -0.0,-2.0 1.7,-1.0" stroke="#71717a" stroke-width="0.5" fill="#18181b"/>
 
     </g>
   </g>
 
-  <!-- Title & Philosophy -->
-  <text x="400" y="365" text-anchor="middle" class="title">W I N T E R S</text>
-  <text x="400" y="390" text-anchor="middle" class="sub">0 x 6 c 0   ·   i n d i e   c r a f t s m a n</text>
-  <text x="400" y="425" text-anchor="middle" class="quote">"quiet tools built by candlelight."</text>
+  <!-- Title Text -->
+  <!-- With snowflake at 190, title placed from 235 onwards or centered text -->
+  <!-- If we place snowflake relative to text: text at (415, 132) -->
+  <text x="245" y="132" class="hero-title">WINTERS</text>
 
-  <!-- Bottom Divider & Details Card -->
-  <line x1="160" y1="455" x2="640" y2="455" stroke="#1f1f23" stroke-width="1"/>
-  
-  <text x="400" y="485" text-anchor="middle" class="box-txt">
-    <tspan class="box-dim">sanctuary:</tspan> linux, neovim, terminal   
-    <tspan fill="#3f3f46">·</tspan>   
-    <tspan class="box-dim">craft:</tspan> local-first, minimal systems, zero telemetry
+  <!-- 0x6c0 tag below -->
+  <text x="400" y="175" text-anchor="middle" class="hero-sub">0 x 6 c 0</text>
+
+  <!-- Single Cold Poetic Quote -->
+  <text x="400" y="248" text-anchor="middle" class="hero-quote">
+    "cold machines, quiet rooms, code written by candlelight."
   </text>
 </svg>
