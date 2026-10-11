@@ -1,0 +1,278 @@
+<svg width="100%" height="300" viewBox="0 0 800 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @keyframes slow-rotate {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      .flake-spin {
+        transform-origin: 0px 0px;
+        animation: slow-rotate 40s linear infinite;
+      }
+      .hero-quote {
+        font-family: ui-monospace, SFMono-Regular, "Liberation Mono", Menlo, Consolas, monospace;
+        font-size: 13.5px;
+        letter-spacing: 0.14em;
+        fill: #82828c;
+        font-style: italic;
+      }
+      .divider {
+        stroke: #18181b;
+      }
+    </style>
+  </defs>
+
+  <!-- Deep Obsidian Void -->
+  <rect width="800" height="300" rx="12" fill="#09090b" stroke="#18181b" stroke-width="1"/>
+
+  <!-- Falling Sparse Snow Particles -->
+  <g class="falling-snow">
+
+    <circle r="1.1" fill="#ffffff" opacity="0">
+      <animate attributeName="cy" values="-10; 350" dur="9.2s" begin="3.3s" repeatCount="indefinite" />
+      <animate attributeName="cx" values="684; 658" dur="9.2s" begin="3.3s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 0.72; 0.72; 0" keyTimes="0; 0.15; 0.85; 1" dur="9.2s" begin="3.3s" repeatCount="indefinite" />
+    </circle>
+
+    <circle r="0.8" fill="#ffffff" opacity="0">
+      <animate attributeName="cy" values="-10; 350" dur="9.8s" begin="5.1s" repeatCount="indefinite" />
+      <animate attributeName="cx" values="722; 751" dur="9.8s" begin="5.1s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 0.46; 0.46; 0" keyTimes="0; 0.15; 0.85; 1" dur="9.8s" begin="5.1s" repeatCount="indefinite" />
+    </circle>
+
+    <circle r="1.6" fill="#ffffff" opacity="0">
+      <animate attributeName="cy" values="-10; 350" dur="9.2s" begin="2.4s" repeatCount="indefinite" />
+      <animate attributeName="cx" values="547; 584" dur="9.2s" begin="2.4s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 0.62; 0.62; 0" keyTimes="0; 0.15; 0.85; 1" dur="9.2s" begin="2.4s" repeatCount="indefinite" />
+    </circle>
+
+    <circle r="0.8" fill="#ffffff" opacity="0">
+      <animate attributeName="cy" values="-10; 350" dur="14.3s" begin="9.7s" repeatCount="indefinite" />
+      <animate attributeName="cx" values="255; 272" dur="14.3s" begin="9.7s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 0.75; 0.75; 0" keyTimes="0; 0.15; 0.85; 1" dur="14.3s" begin="9.7s" repeatCount="indefinite" />
+    </circle>
+
+    <circle r="1.9" fill="#ffffff" opacity="0">
+      <animate attributeName="cy" values="-10; 350" dur="12.1s" begin="1.9s" repeatCount="indefinite" />
+      <animate attributeName="cx" values="744; 758" dur="12.1s" begin="1.9s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 0.52; 0.52; 0" keyTimes="0; 0.15; 0.85; 1" dur="12.1s" begin="1.9s" repeatCount="indefinite" />
+    </circle>
+
+    <circle r="1.5" fill="#ffffff" opacity="0">
+      <animate attributeName="cy" values="-10; 350" dur="9.9s" begin="10.2s" repeatCount="indefinite" />
+      <animate attributeName="cx" values="124; 132" dur="9.9s" begin="10.2s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 0.75; 0.75; 0" keyTimes="0; 0.15; 0.85; 1" dur="9.9s" begin="10.2s" repeatCount="indefinite" />
+    </circle>
+
+    <circle r="0.9" fill="#ffffff" opacity="0">
+      <animate attributeName="cy" values="-10; 350" dur="10.1s" begin="11.1s" repeatCount="indefinite" />
+      <animate attributeName="cx" values="500; 528" dur="10.1s" begin="11.1s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 0.5; 0.5; 0" keyTimes="0; 0.15; 0.85; 1" dur="10.1s" begin="11.1s" repeatCount="indefinite" />
+    </circle>
+
+    <circle r="1.0" fill="#ffffff" opacity="0">
+      <animate attributeName="cy" values="-10; 350" dur="17.0s" begin="4.3s" repeatCount="indefinite" />
+      <animate attributeName="cx" values="673; 712" dur="17.0s" begin="4.3s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 0.38; 0.38; 0" keyTimes="0; 0.15; 0.85; 1" dur="17.0s" begin="4.3s" repeatCount="indefinite" />
+    </circle>
+
+    <circle r="1.8" fill="#ffffff" opacity="0">
+      <animate attributeName="cy" values="-10; 350" dur="16.0s" begin="11.8s" repeatCount="indefinite" />
+      <animate attributeName="cx" values="707; 696" dur="16.0s" begin="11.8s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 0.78; 0.78; 0" keyTimes="0; 0.15; 0.85; 1" dur="16.0s" begin="11.8s" repeatCount="indefinite" />
+    </circle>
+
+    <circle r="1.0" fill="#ffffff" opacity="0">
+      <animate attributeName="cy" values="-10; 350" dur="13.1s" begin="10.0s" repeatCount="indefinite" />
+      <animate attributeName="cx" values="419; 414" dur="13.1s" begin="10.0s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 0.53; 0.53; 0" keyTimes="0; 0.15; 0.85; 1" dur="13.1s" begin="10.0s" repeatCount="indefinite" />
+    </circle>
+
+    <circle r="0.9" fill="#ffffff" opacity="0">
+      <animate attributeName="cy" values="-10; 350" dur="15.3s" begin="8.2s" repeatCount="indefinite" />
+      <animate attributeName="cx" values="716; 710" dur="15.3s" begin="8.2s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 0.67; 0.67; 0" keyTimes="0; 0.15; 0.85; 1" dur="15.3s" begin="8.2s" repeatCount="indefinite" />
+    </circle>
+
+    <circle r="2.0" fill="#ffffff" opacity="0">
+      <animate attributeName="cy" values="-10; 350" dur="10.5s" begin="4.6s" repeatCount="indefinite" />
+      <animate attributeName="cx" values="576; 567" dur="10.5s" begin="4.6s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 0.67; 0.67; 0" keyTimes="0; 0.15; 0.85; 1" dur="10.5s" begin="4.6s" repeatCount="indefinite" />
+    </circle>
+
+    <circle r="1.7" fill="#ffffff" opacity="0">
+      <animate attributeName="cy" values="-10; 350" dur="15.2s" begin="10.1s" repeatCount="indefinite" />
+      <animate attributeName="cx" values="600; 588" dur="15.2s" begin="10.1s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 0.46; 0.46; 0" keyTimes="0; 0.15; 0.85; 1" dur="15.2s" begin="10.1s" repeatCount="indefinite" />
+    </circle>
+
+    <circle r="1.9" fill="#ffffff" opacity="0">
+      <animate attributeName="cy" values="-10; 350" dur="12.6s" begin="0.8s" repeatCount="indefinite" />
+      <animate attributeName="cx" values="62; 62" dur="12.6s" begin="0.8s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 0.63; 0.63; 0" keyTimes="0; 0.15; 0.85; 1" dur="12.6s" begin="0.8s" repeatCount="indefinite" />
+    </circle>
+
+    <circle r="1.9" fill="#ffffff" opacity="0">
+      <animate attributeName="cy" values="-10; 350" dur="10.9s" begin="6.0s" repeatCount="indefinite" />
+      <animate attributeName="cx" values="765; 765" dur="10.9s" begin="6.0s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 0.67; 0.67; 0" keyTimes="0; 0.15; 0.85; 1" dur="10.9s" begin="6.0s" repeatCount="indefinite" />
+    </circle>
+
+    <circle r="1.4" fill="#ffffff" opacity="0">
+      <animate attributeName="cy" values="-10; 350" dur="10.3s" begin="8.9s" repeatCount="indefinite" />
+      <animate attributeName="cx" values="176; 169" dur="10.3s" begin="8.9s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 0.72; 0.72; 0" keyTimes="0; 0.15; 0.85; 1" dur="10.3s" begin="8.9s" repeatCount="indefinite" />
+    </circle>
+
+    <circle r="2.0" fill="#ffffff" opacity="0">
+      <animate attributeName="cy" values="-10; 350" dur="12.6s" begin="2.6s" repeatCount="indefinite" />
+      <animate attributeName="cx" values="468; 502" dur="12.6s" begin="2.6s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 0.6; 0.6; 0" keyTimes="0; 0.15; 0.85; 1" dur="12.6s" begin="2.6s" repeatCount="indefinite" />
+    </circle>
+
+    <circle r="1.0" fill="#ffffff" opacity="0">
+      <animate attributeName="cy" values="-10; 350" dur="16.7s" begin="1.8s" repeatCount="indefinite" />
+      <animate attributeName="cx" values="123; 89" dur="16.7s" begin="1.8s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 0.69; 0.69; 0" keyTimes="0; 0.15; 0.85; 1" dur="16.7s" begin="1.8s" repeatCount="indefinite" />
+    </circle>
+
+    <circle r="1.4" fill="#ffffff" opacity="0">
+      <animate attributeName="cy" values="-10; 350" dur="12.5s" begin="7.2s" repeatCount="indefinite" />
+      <animate attributeName="cx" values="640; 608" dur="12.5s" begin="7.2s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 0.48; 0.48; 0" keyTimes="0; 0.15; 0.85; 1" dur="12.5s" begin="7.2s" repeatCount="indefinite" />
+    </circle>
+
+    <circle r="1.9" fill="#ffffff" opacity="0">
+      <animate attributeName="cy" values="-10; 350" dur="15.1s" begin="1.4s" repeatCount="indefinite" />
+      <animate attributeName="cx" values="596; 557" dur="15.1s" begin="1.4s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 0.73; 0.73; 0" keyTimes="0; 0.15; 0.85; 1" dur="15.1s" begin="1.4s" repeatCount="indefinite" />
+    </circle>
+
+    <circle r="1.3" fill="#ffffff" opacity="0">
+      <animate attributeName="cy" values="-10; 350" dur="10.0s" begin="5.2s" repeatCount="indefinite" />
+      <animate attributeName="cx" values="686; 689" dur="10.0s" begin="5.2s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 0.83; 0.83; 0" keyTimes="0; 0.15; 0.85; 1" dur="10.0s" begin="5.2s" repeatCount="indefinite" />
+    </circle>
+
+    <circle r="1.4" fill="#ffffff" opacity="0">
+      <animate attributeName="cy" values="-10; 350" dur="17.7s" begin="9.1s" repeatCount="indefinite" />
+      <animate attributeName="cx" values="766; 759" dur="17.7s" begin="9.1s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 0.4; 0.4; 0" keyTimes="0; 0.15; 0.85; 1" dur="17.7s" begin="9.1s" repeatCount="indefinite" />
+    </circle>
+
+    <circle r="1.0" fill="#ffffff" opacity="0">
+      <animate attributeName="cy" values="-10; 350" dur="16.6s" begin="6.1s" repeatCount="indefinite" />
+      <animate attributeName="cx" values="670; 668" dur="16.6s" begin="6.1s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 0.54; 0.54; 0" keyTimes="0; 0.15; 0.85; 1" dur="16.6s" begin="6.1s" repeatCount="indefinite" />
+    </circle>
+
+    <circle r="1.9" fill="#ffffff" opacity="0">
+      <animate attributeName="cy" values="-10; 350" dur="17.6s" begin="11.1s" repeatCount="indefinite" />
+      <animate attributeName="cx" values="195; 224" dur="17.6s" begin="11.1s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 0.65; 0.65; 0" keyTimes="0; 0.15; 0.85; 1" dur="17.6s" begin="11.1s" repeatCount="indefinite" />
+    </circle>
+  </g>
+
+  <!-- Hairline Center Subtle Glow Line -->
+  <line x1="240" y1="205" x2="560" y2="205" stroke="#1c1c20" stroke-width="0.75" class="divider"/>
+
+  <!-- Locked Unit (Snowflake + Stylized Vector Name) perfectly centered -->
+  <!-- 1. Spinning Kinetic Snowflake -->
+  <g transform="translate(237, 138)">
+    <g class="flake-spin">
+<line x1="0.0" y1="0.0" x2="22.0" y2="0.0" stroke="#e4e4e7" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="8.0" y1="0.0" x2="10.5" y2="-4.3" stroke="#a1a1aa" stroke-width="0.9" stroke-linecap="round"/>
+<line x1="8.0" y1="0.0" x2="10.5" y2="4.3" stroke="#a1a1aa" stroke-width="0.9" stroke-linecap="round"/>
+<line x1="14.0" y1="0.0" x2="18.0" y2="-6.9" stroke="#d4d4d8" stroke-width="1.0" stroke-linecap="round"/>
+<line x1="16.2" y1="-3.8" x2="18.7" y2="-3.8" stroke="#71717a" stroke-width="0.6" stroke-linecap="round"/>
+<line x1="14.0" y1="0.0" x2="18.0" y2="6.9" stroke="#d4d4d8" stroke-width="1.0" stroke-linecap="round"/>
+<line x1="16.2" y1="3.8" x2="18.7" y2="3.8" stroke="#71717a" stroke-width="0.6" stroke-linecap="round"/>
+<line x1="19.0" y1="0.0" x2="21.0" y2="-3.5" stroke="#a1a1aa" stroke-width="0.8" stroke-linecap="round"/>
+<line x1="19.0" y1="0.0" x2="21.0" y2="3.5" stroke="#a1a1aa" stroke-width="0.8" stroke-linecap="round"/>
+<circle cx="24.0" cy="0.0" r="0.8" fill="#ffffff"/>
+<line x1="0.0" y1="0.0" x2="11.0" y2="19.1" stroke="#e4e4e7" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="4.0" y1="6.9" x2="9.0" y2="6.9" stroke="#a1a1aa" stroke-width="0.9" stroke-linecap="round"/>
+<line x1="4.0" y1="6.9" x2="1.5" y2="11.3" stroke="#a1a1aa" stroke-width="0.9" stroke-linecap="round"/>
+<line x1="7.0" y1="12.1" x2="15.0" y2="12.1" stroke="#d4d4d8" stroke-width="1.0" stroke-linecap="round"/>
+<line x1="11.4" y1="12.1" x2="12.7" y2="14.3" stroke="#71717a" stroke-width="0.6" stroke-linecap="round"/>
+<line x1="7.0" y1="12.1" x2="3.0" y2="19.1" stroke="#d4d4d8" stroke-width="1.0" stroke-linecap="round"/>
+<line x1="4.8" y1="15.9" x2="6.1" y2="18.1" stroke="#71717a" stroke-width="0.6" stroke-linecap="round"/>
+<line x1="9.5" y1="16.5" x2="13.5" y2="16.5" stroke="#a1a1aa" stroke-width="0.8" stroke-linecap="round"/>
+<line x1="9.5" y1="16.5" x2="7.5" y2="19.9" stroke="#a1a1aa" stroke-width="0.8" stroke-linecap="round"/>
+<circle cx="12.0" cy="20.8" r="0.8" fill="#ffffff"/>
+<line x1="0.0" y1="0.0" x2="-11.0" y2="19.1" stroke="#e4e4e7" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="-4.0" y1="6.9" x2="-1.5" y2="11.3" stroke="#a1a1aa" stroke-width="0.9" stroke-linecap="round"/>
+<line x1="-4.0" y1="6.9" x2="-9.0" y2="6.9" stroke="#a1a1aa" stroke-width="0.9" stroke-linecap="round"/>
+<line x1="-7.0" y1="12.1" x2="-3.0" y2="19.1" stroke="#d4d4d8" stroke-width="1.0" stroke-linecap="round"/>
+<line x1="-4.8" y1="15.9" x2="-6.0" y2="18.1" stroke="#71717a" stroke-width="0.6" stroke-linecap="round"/>
+<line x1="-7.0" y1="12.1" x2="-15.0" y2="12.1" stroke="#d4d4d8" stroke-width="1.0" stroke-linecap="round"/>
+<line x1="-11.4" y1="12.1" x2="-12.6" y2="14.3" stroke="#71717a" stroke-width="0.6" stroke-linecap="round"/>
+<line x1="-9.5" y1="16.5" x2="-7.5" y2="19.9" stroke="#a1a1aa" stroke-width="0.8" stroke-linecap="round"/>
+<line x1="-9.5" y1="16.5" x2="-13.5" y2="16.5" stroke="#a1a1aa" stroke-width="0.8" stroke-linecap="round"/>
+<circle cx="-12.0" cy="20.8" r="0.8" fill="#ffffff"/>
+<line x1="0.0" y1="0.0" x2="-22.0" y2="0.0" stroke="#e4e4e7" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="-8.0" y1="0.0" x2="-10.5" y2="4.3" stroke="#a1a1aa" stroke-width="0.9" stroke-linecap="round"/>
+<line x1="-8.0" y1="0.0" x2="-10.5" y2="-4.3" stroke="#a1a1aa" stroke-width="0.9" stroke-linecap="round"/>
+<line x1="-14.0" y1="0.0" x2="-18.0" y2="6.9" stroke="#d4d4d8" stroke-width="1.0" stroke-linecap="round"/>
+<line x1="-16.2" y1="3.8" x2="-18.7" y2="3.8" stroke="#71717a" stroke-width="0.6" stroke-linecap="round"/>
+<line x1="-14.0" y1="0.0" x2="-18.0" y2="-6.9" stroke="#d4d4d8" stroke-width="1.0" stroke-linecap="round"/>
+<line x1="-16.2" y1="-3.8" x2="-18.7" y2="-3.8" stroke="#71717a" stroke-width="0.6" stroke-linecap="round"/>
+<line x1="-19.0" y1="0.0" x2="-21.0" y2="3.5" stroke="#a1a1aa" stroke-width="0.8" stroke-linecap="round"/>
+<line x1="-19.0" y1="0.0" x2="-21.0" y2="-3.5" stroke="#a1a1aa" stroke-width="0.8" stroke-linecap="round"/>
+<circle cx="-24.0" cy="0.0" r="0.8" fill="#ffffff"/>
+<line x1="0.0" y1="0.0" x2="-11.0" y2="-19.1" stroke="#e4e4e7" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="-4.0" y1="-6.9" x2="-9.0" y2="-6.9" stroke="#a1a1aa" stroke-width="0.9" stroke-linecap="round"/>
+<line x1="-4.0" y1="-6.9" x2="-1.5" y2="-11.3" stroke="#a1a1aa" stroke-width="0.9" stroke-linecap="round"/>
+<line x1="-7.0" y1="-12.1" x2="-15.0" y2="-12.1" stroke="#d4d4d8" stroke-width="1.0" stroke-linecap="round"/>
+<line x1="-11.4" y1="-12.1" x2="-12.7" y2="-14.3" stroke="#71717a" stroke-width="0.6" stroke-linecap="round"/>
+<line x1="-7.0" y1="-12.1" x2="-3.0" y2="-19.1" stroke="#d4d4d8" stroke-width="1.0" stroke-linecap="round"/>
+<line x1="-4.8" y1="-15.9" x2="-6.1" y2="-18.1" stroke="#71717a" stroke-width="0.6" stroke-linecap="round"/>
+<line x1="-9.5" y1="-16.5" x2="-13.5" y2="-16.5" stroke="#a1a1aa" stroke-width="0.8" stroke-linecap="round"/>
+<line x1="-9.5" y1="-16.5" x2="-7.5" y2="-19.9" stroke="#a1a1aa" stroke-width="0.8" stroke-linecap="round"/>
+<circle cx="-12.0" cy="-20.8" r="0.8" fill="#ffffff"/>
+<line x1="0.0" y1="0.0" x2="11.0" y2="-19.1" stroke="#e4e4e7" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="4.0" y1="-6.9" x2="1.5" y2="-11.3" stroke="#a1a1aa" stroke-width="0.9" stroke-linecap="round"/>
+<line x1="4.0" y1="-6.9" x2="9.0" y2="-6.9" stroke="#a1a1aa" stroke-width="0.9" stroke-linecap="round"/>
+<line x1="7.0" y1="-12.1" x2="3.0" y2="-19.1" stroke="#d4d4d8" stroke-width="1.0" stroke-linecap="round"/>
+<line x1="4.8" y1="-15.9" x2="6.0" y2="-18.1" stroke="#71717a" stroke-width="0.6" stroke-linecap="round"/>
+<line x1="7.0" y1="-12.1" x2="15.0" y2="-12.1" stroke="#d4d4d8" stroke-width="1.0" stroke-linecap="round"/>
+<line x1="11.4" y1="-12.1" x2="12.7" y2="-14.3" stroke="#71717a" stroke-width="0.6" stroke-linecap="round"/>
+<line x1="9.5" y1="-16.5" x2="7.5" y2="-19.9" stroke="#a1a1aa" stroke-width="0.8" stroke-linecap="round"/>
+<line x1="9.5" y1="-16.5" x2="13.5" y2="-16.5" stroke="#a1a1aa" stroke-width="0.8" stroke-linecap="round"/>
+<circle cx="12.0" cy="-20.8" r="0.8" fill="#ffffff"/>
+<polygon points="4.5,0.0 2.3,3.9 -2.2,3.9 -4.5,0.0 -2.3,-3.9 2.3,-3.9" stroke="#ffffff" stroke-width="0.9" fill="#09090b"/>
+<polygon points="1.7,1.0 0.0,2.0 -1.7,1.0 -1.7,-1.0 -0.0,-2.0 1.7,-1.0" stroke="#71717a" stroke-width="0.5" fill="#18181b"/>
+
+    </g>
+  </g>
+
+  <!-- 2. Crisp Vector Glyphs of "W I N T E R S" (Zero font loading dependency, sharp everywhere) -->
+  <g id="letters">
+    <g transform="translate(283.00, 152) scale(0.036000, -0.036000)">
+      <path d="M29 666 46 690H146L269 111H280L411 620H532L662 111H674L797 690H897L914 666L771 0H574L471 406L369 0H173Z" fill="#fafafa" />
+    </g>
+    <g transform="translate(340.95, 152) scale(0.036000, -0.036000)">
+      <path d="M85 0V690H207V0Z" fill="#fafafa" />
+    </g>
+    <g transform="translate(375.46, 152) scale(0.036000, -0.036000)">
+      <path d="M85 0V690H218L524 198V690H646V0H514L207 492V0Z" fill="#fafafa" />
+    </g>
+    <g transform="translate(425.78, 152) scale(0.036000, -0.036000)">
+      <path d="M24 579V690H581V579H364V0H241V579Z" fill="#fafafa" />
+    </g>
+    <g transform="translate(471.56, 152) scale(0.036000, -0.036000)">
+      <path d="M85 0V690H549V579H207V413H519V302H207V111H549V0Z" fill="#fafafa" />
+    </g>
+    <g transform="translate(517.12, 152) scale(0.036000, -0.036000)">
+      <path d="M85 0V690H417Q580 690 580 527V414Q580 288 480 261L600 26L585 0H481L353 252H207V0ZM207 363H414Q458 363 458 407V536Q458 579 414 579H207Z" fill="#fafafa" />
+    </g>
+    <g transform="translate(564.34, 152) scale(0.036000, -0.036000)">
+      <path d="M55 46V111H364Q408 111 408 154V230Q408 268 374 275L171 316Q55 339 55 472V527Q55 690 218 690H451L510 644V579H221Q177 579 177 536V469Q177 431 211 424L414 384Q530 360 530 228V163Q530 0 367 0H114Z" fill="#fafafa" />
+    </g>
+  </g>
+
+  <!-- Single Cold Poetic Quote -->
+  <text x="400" y="244" text-anchor="middle" class="hero-quote">
+    "the frost preserves what the fire would burn."
+  </text>
+</svg>
